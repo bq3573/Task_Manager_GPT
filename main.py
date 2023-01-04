@@ -56,8 +56,10 @@ class TaskManager:
         self.date_entry.pack(side="left", padx=5, pady=5)
         self.duration_label.pack(side="left", padx=5, pady=5)
         self.duration_entry.pack(side="left", padx=5, pady=5)
+        # self.add_button.configure(fg='black', bg='white')
         self.add_button.pack(side="left", padx=5, pady=5)
-        self.tasks_list.pack(side="left", padx=10, pady=10)
+        self.tasks_list.configure(width=40)
+        self.tasks_list.pack(side="left", padx=5, pady=5)
         self.complete_button.pack(side="left", padx=5, pady=5)
 
 
